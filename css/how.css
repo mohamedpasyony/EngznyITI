@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --dark-color: #191c25;
+    --body-color: #fff;
+    --main-color: #029cff;
+    --gold-color: #FFD700;
+}
+
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    background-color: var(--body-color);
+
+}
+
+
+/* Start Navbar */
+.navbar {
+    background-color: var(--dark-color);
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--main-color);
+}
+
+.navbar .navbar-toggler {
+    color: var(--body-color);
+    font-size: 25px;
+    border-color: var(--body-color);
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--main-color);
+}
+
+/* End Navbar */
+
+/* Start Page Header */
+.page-hdr {
+    direction: ltr;
+    padding: 40px 0;
+    background: url(/imgs/inerbgbg.png) repeat top;
+    width: 100%;
+    /* background-color: #bdbdbd; */
+    background-color: #dbdbdb;
+
+}
+
+/* End Page Header */
+
+/* content */
+.how {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    direction: rtl;
+}
+
+.how .main-title::after {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.flex img {
+    width: 91px;
+}
+
+.flex p {
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.flex span {
+    font-weight: bold;
+}
+
+.flex .here {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* content */
+
+/* Start Footer */
+.footer {
+    background-color: var(--dark-color);
+    direction: ltr;
+}
+
+.footer .copyright>span {
+    color: var(--main-color);
+}
+
+.footer .copyright div span {
+    color: var(--gold-color);
+}
+
+.footer ul {
+    padding-right: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* .footer .links-1 {
+    padding-right: 45px;
+}
+
+.footer .links-2 {
+    padding-right: 30px;
+} */
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer .link {
+    color: rgba(255, 255, 255, .5);
+}
+
+.footer li a:hover {
+    color: var(--main-color);
+}
+
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer .facebook {
+    background-color: #1877f2;
+}
+
+.footer .twitter {
+    background-color: #1da1f2;
+}
+
+.footer .linkedin {
+    background-color: #0077b5;
+}
+
+.footer .youtube {
+    background-color: #ff0000;
+}
+
+.footer .links,
+.footer.contact {
+    padding-top: 5px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-item img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #4CAF50;
+}
+
+.product-quantity {
+    font-size: 16px;
+    color: #888;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    color: #4CAF50;
+}
+
+.cart-empty {
+    text-align: center;
+    font-size: 24px;
+    color: #888;
+    margin-top: 50px;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+}
+
+.remove-btn {
+    color: #d9534f;
+    cursor: pointer;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+/* End Footer */

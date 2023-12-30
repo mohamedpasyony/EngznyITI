@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  /* --dark-color: #19283f; */
+  --dark-color: #191c25;
+  --body-color: #ecf0ff;
+  --main-color: #029cff;
+  --gold-color: #FFD700;
+}
+
+
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  /* font-family: 'Noto Kufi Arabic', sans-serif; */
+  background-color: var(--body-color);
+}
+
+
+/* Start Navbar */
+.navbar {
+  background-color: var(--dark-color);
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+
+.navbar .navbar-toggler {
+  color: var(--body-color);
+  font-size: 25px;
+  border-color: var(--body-color);
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--main-color);
+}
+
+/* End Navbar */
+
+
+/* Start services */
+.services .main-title::after {
+  content: "";
+  width: 300px;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services {
+  direction: rtl;
+}
+
+.card {
+  text-align: center;
+  /* Set a maximum width for the card */
+}
+
+.card .card-img-top {
+  padding: 15px;
+  width: 100%;
+  /* Ensure the image takes the full width of the container */
+  height: 250px;
+  /* Set a fixed height for the image */
+  object-fit: cover;
+  /* Maintain aspect ratio while covering the container */
+}
+
+.card-body {
+  height: 350px;
+  /* Set a fixed height for the card body */
+  display: flex;
+  /* Use flexbox layout */
+  flex-direction: column;
+  /* Arrange items vertically (column layout) */
+  align-items: center;
+}
+
+/* Additional styling for centering the image horizontally */
+.card-body img {
+
+  display: block;
+  margin: 0 auto;
+}
+
+.card-body .btn {
+  margin-top: auto;
+  /* Push the buttons to the bottom of the card body */
+}
+
+.rating {
+  color: #ffd700;
+  font-size: 24px;
+  /* Set the star color to gold (yellow) */
+}
+
+/* Additional styling for filter section */
+.filter-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+
+}
+
+.filter-controls {
+  display: flex;
+  gap: 10px;
+}
+
+/* Additional styling for filter buttons */
+.filter-button {
+  padding: 8px 16px;
+  background-color: var(--dark-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: var(--main-color);
+}
+
+.services h4 {
+  font-weight: bold;
+}
+
+.btn.btn-success {
+  background: var(--dark-color);
+  color: var(--body-color);
+  width: 40%;
+  padding: 12px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn.btn-success:hover {
+  color: var(--main-color);
+}
+
+/* End services */
+
+/* Start Footer */
+.footer {
+  background-color: var(--dark-color);
+  direction: ltr;
+}
+
+.footer .copyright>span {
+  color: var(--main-color);
+}
+
+.footer .copyright div span {
+  color: var(--gold-color);
+}
+
+.footer ul {
+  padding-right: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer .link {
+  color: rgba(255, 255, 255, .5);
+}
+
+.footer li a:hover {
+  color: var(--main-color);
+}
+
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .facebook {
+  background-color: #1877f2;
+}
+
+.footer .twitter {
+  background-color: #1da1f2;
+}
+
+.footer .linkedin {
+  background-color: #0077b5;
+}
+
+.footer .youtube {
+  background-color: #ff0000;
+}
+
+.footer .links,
+.footer.contact {
+  padding-top: 5px;
+}
+
+.contact {
+  padding-top: 5px;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+}
+
+/* End Footer */
